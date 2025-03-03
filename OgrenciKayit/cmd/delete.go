@@ -10,7 +10,7 @@ import (
 var deleteCmd = &cobra.Command{
 	Use:   "delete",
 	Short: "Öğrenci sil",
-	Long:  `Belirtilen indeksteki öğrenciyi silmek için kullanılır.`,
+	Long:  `Öğrenciyi silmek için başındaki değeri girmeniz yeterli.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 1 {
 			fmt.Println("Lütfen silinecek öğrencinin indeksini girin.")
